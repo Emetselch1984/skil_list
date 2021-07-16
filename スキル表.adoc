@@ -1,0 +1,126 @@
+:lang: ja
+:doctype: book
+:toc: left
+:toclevels: 3
+:toc-title: 目次
+:sectnums:
+:sectnumlevels: 4
+:sectlinks:
+:chapter-label: nil
+:imagesdir: ./images
+//asciidoctor-pdf -a scripts=cjk -a pdf-theme=default-with-fallback-font スキル表.adoc
+
+= スキル表
+
+[%hardbreaks]
+私が今まで作ったもの、勉強したものをまとめました。
+各項目をクリックすると、ページ下部の参考にしている文献リストに飛びます。
+参考になれば幸いです。
+
+== スキル表
+
+=== ビジネススキル
+* <<_仕事のポイント,上司の仕事術を参考に自分の軸を持って仕事ができる>>
+* <<_開発タスクのアサイン,実装の進め方を最低限理解していて、上司に相談できる。>>
+
+=== vim
+* vimの基本的なコマンドを理解し、RubyMine上でvimを用いてコードを書いている。
+
+=== 正規表現
+* <<_qiita記事正規表現, 貪欲、肯定の後読みなど、基本的な正規表現を使える>>
+
+=== SQL
+* <<_sqlの基本,外部キー制約、inner join と　outer join の違い、トランザクションなどを理解し、かつRails内で表記できる。>>
+
+=== SCSS
+* <<_scss関連,bootstrapを使わずに、レスポンシブデザインに対応したscssを書ける。>>
+
+=== CSSフレームワーク
+==== Bootstrap
+* <<_bootstrap設置ガイド,bootsrapを使って、レイアウト、フォーム、コンポーネントを作れる。>>
+
+==== Vuetify
+* vuetifyを使って、レイアウト、フォーム、コンポーネントを作れる。
+
+=== Ruby
+* <<_楽しいruby>>に書いてある課題問題とテストを全て作れる。
+* <<_チェリー本>>に書いてある課題問題とテストを全て作れる
+
+=== Rails
+* <<_rspec>>でテストが書ける。
+* <<_オブジェクト指向,単一責任、ダックタイピング、継承とコンポジションの選択など。保守性、拡張性を備わった、抽象的なコードの読み方、書き方の基本を理解している。>>
+* <<_rails6実践ガイド,サービスオブジェクト、フォームオブジェクト、プレゼンター、などの基本を理解している。>>
+** モデルプレゼンターで'draper'を使える。
+* <<_httpsgithub_comemetselch1984line_bot_weather_forecast天気を教えてくれるline_bot,外部サイトのxmlを読み込み、抽出したデータを他のアプリケーションに送ることができる。>>
+* <<_httpsgithub_comemetselch1984line_bot_rakuten_hotel_resarch_git楽天ホテルの情報を教えてくれるline_bot,ラインから楽天apiにリクエストを送り、apiから取得した情報をラインで表示できる。>>
+
+==== gem
+* <<_掲示場アプリ,sorceryを用いて認証機能を作れる>>
+* <<_掲示場アプリ,'carrierwave'を使い写真投稿機能を作れる>>
+** <<_掲示場アプリ,かつ　'fog-aws'を使って、AWSのs3に写真を保存できる>>
+
+=== javascript
+* <<_javascript>>の基本的なコードが書ける。
+
+=== Vue
+* <<_qiita記事検索サービス,axiosと外部apiを用いて他サービスの情報を取得できる>>
+* <<_qiita記事検索サービス,監視ウォッチを使い、フォーム欄に入力している情報を元に自動的に検索し情報を取得できる>>
+
+=== AWS
+* <<_aws関連,vpcとec2を使いwebサーバーを構築できる>>
+
+=== Docker
+* Dockerを使ってRailsの環境を構築できる
+
+== 過去に作ったアプリ
+=== https://github.com/Emetselch1984/customer_service[顧客用業務管理システム]
+=== qiita記事検索サービス
+=== ビットコイン表示サービス
+=== 掲示場アプリ
+=== https://github.com/Emetselch1984/line_bot_weather_forecast[天気を教えてくれるline_bot]
+=== https://github.com/Emetselch1984/line_bot_rakuten_hotel_resarch.git[楽天ホテルの情報を教えてくれるline_bot]
+=== https://github.com/Emetselch1984/rakuten_shop_line_bot[楽天商品を検索できるline_bot]
+=== https://github.com/Emetselch1984/society_window[社会の窓が開いている人に匿名で通知するサービス]
+== 日頃参考にしている文献、ブログ
+=== リンク集
+==== 仕事のポイント
+https://blog.jnito.com/entry/2020/05/14/081528[新人ITエンジニア向け　僕が仕事をする上で大事にしているポイントあれこれ]
+
+==== 開発タスクのアサイン
+https://qiita.com/jnchito/items/017487cd882091494298[qiita【新人プログラマ応援】開発タスクをアサインされたらどういう手順で進めるべきか]
+
+==== qiita記事(正規表現)
+https://qiita.com/jnchito/items/893c887fbf19e17d3ff9[初心者歓迎！手と目で覚える正規表現入門・その１「さまざまな形式の電話番号を検索しよう」]
+
+==== 楽しいRuby
+https://tanoshiiruby.github.io/6/[楽しいRuby]
+
+==== チェリー本
+https://gihyo.jp/book/2017/978-4-7741-9397-7[プロを目指す人のためのRuby入門 言語仕様からテスト駆動開発・デバッグ技法まで]
+
+==== オブジェクト指向
+https://qiita.com/RyomaKaneko/items/b1059b9f137a81b14c0c[オブエジェクト指向について自作記事]
+
+==== Rails6実践ガイド
+https://note.com/emetselch1984/n/nfedba35ffcc2[Rails6実践ガイドについて自作記事]
+
+==== Rspec
+https://leanpub.com/everydayrailsrspec-jp[Everyday Rails - RSpecによるRailsテスト入門]
+
+https://qiita.com/jnchito/items/42193d066bd61c740612[使えるRSpec入門・その1「RSpecの基本的な構文や便利な機能を理解する」]
+
+==== javascript
+https://gihyo.jp/book/2016/978-4-7741-8411-1[改訂新版JavaScript本格入門
+～モダンスタイルによる基礎から現場での応用まで]
+
+==== sqlの基本
+https://www.udemy.com/course/standard-sql-for-beginners/learn/lecture/10079160?start=0#overview[はじめてのSQL ・データ分析入門 -データベースのデータをビジネスパーソンが現場で活用するためのSQL初心者向コース]
+
+==== AWS関連
+https://www.udemy.com/course/aws-and-infra/[AWS：ゼロから実践するAmazon Web Services。手を動かしながらインフラの基礎を習得]
+
+==== scss関連
+https://www.udemy.com/course/front-dev-tutorial/[【JavaScript＆CSS】ガチで学びたい人のためのWEB開発徹底実践（フロントエンド編）]
+
+==== Bootstrap設置ガイド
+https://bootstrap-guide.com/outline[Bootstrap設置ガイド]
